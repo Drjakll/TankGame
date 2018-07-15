@@ -57,7 +57,7 @@ public class BigBlue : Explosion {
         maxDamage *= strength;
     }
 
-    //Will apply force for .3 sec and then detect the explosion force
+    //Will apply force for .3 sec and then deduct the explosion force
     private IEnumerator applyForce(ConstantForce constF, Vector3 DirForce)
     {
         yield return new WaitForSeconds(0.3f);
